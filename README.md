@@ -30,3 +30,42 @@ Lab 1.1 Cài đặt MySQL Community
 
 Truy cập [Tại đây](https://dev.mysql.com/downloads/mysql/). Và tải xuống phiên bản Mysql Community.
 
+[Mysql_Community1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL1.png)
+
+**Bước 2**: Mở file vừa tải về và thực hiện cài đặt
+
+[Mysql_Community2](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL2.png)
+
+[Mysql_Community3](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL3.png)
+
+[Mysql_Community4](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL4.png)
+
+[Mysql_Community5](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL5.png)
+
+[Mysql_Community6](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL6.png)
+
+[Mysql_Community7](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL7.png)
+
+[Mysql_Community8](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL8.png)
+
+[Mysql_Community9](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL9.png)
+
+[Mysql_Community10](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL10.png)
+
+[Mysql_Community11](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL11.png)
+
+**Bước 3**: Sau khi đã việc cài đã hoàn tất, mở Mysql Workbench
+
+[Mysql_Community12](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL12.png)
+
+
+
+
+
+
+
+
+
+
+
+
