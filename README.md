@@ -58,8 +58,73 @@ Truy cập [Tại đây](https://dev.mysql.com/downloads/mysql/). Và tải xu�
 
 ![Mysql_Community12](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL12.png)
 
+Quiz 1:
 
+Câu 1: Điều nào sau đây là đúng khi nói về cơ sở dữ liệu?
 
+A. Là nơi quản lý dữ liệu  B. Là một tập hợp dữ liệu hoặc thông tin có tổ chức để có thể dễ dàng truy cập, cập nhật hoặc thao tác. <br>
+C. Có thể gọi là Database.  D. Được gọi là DBMS.
+
+Đáp án: B, C
+
+Câu 2: Tính năng nào sau đây không phải là tính năng của SQL Server?
+
+A. Hỗ trợ lưu trữ dữ liệu lớn.  B. Hỗ trợ các giao dịch (transactions) và tính toàn vẹn dữ liệu.<br>
+C. Chỉ chạy trên hệ điều hành Linux.  D.Hỗ trợ sao lưu và khôi phục dữ liệu.
+
+Đáp án: C
+
+Câu 3: Hệ quản trị cơ sở dữ liệu DBMS là gì?
+
+A. Là một cơ sở dữ liệu.  B. Là một phần mềm để giúp quản lý cơ sở dữ liệu. DBMS sẽ bao gồm các chức năng để xác định, thao tác cũng như truy xuất và quản lý dữ liệu.<br>
+C. Là một môi trường Cloud để phát triển ứng dụng.  D. Là một ngôn ngữ lập trình.
+
+Đáp án: B
+
+Câu 4: DBMS là viết tắt của từ gì?
+
+A. Database  B. Database management system  C. Data management system D. Database storage system
+
+Đáp án: B
+
+Câu 5: MySQL là gì?
+
+A. Là một ngôn ngữ dữ liệu  B. Là một ngôn ngữ truy vấn  C. Là một DBMS D. Là tên một cơ sở dữ liệu
+
+Đáp án: C
+
+Câu 6: SQL là gì?
+
+A. Là một ngôn ngữ truy vấn dữ liệu  B. Có tên đầy đủ là Structured Query Language  C. Là một DBMS  D. Là một cơ sở dữ liệu
+
+Đáp án: A, B
+
+Câu 7: Trong các đáp án dưới đây, đâu là một DBMS?
+
+A. SQL  B. MySQL  C. SQL SERVER  D. T-SQL
+
+Đáp án: B,C
+
+Câu 8: Để có thể sử dụng được MySQL trong chế độ dòng lệnh của GoormIDE, chúng ta cần chạy đoạn mã nào dưới đây?
+
+A. mysql-ctl  B. mysql -u root -p  C. mysql cli  D. mysql-ctl cli
+
+Đáp án: D
+
+Câu 9: Chúng ta có thể sử dụng SQL trong MySQL.
+
+A. Đúng  B. Sai
+
+Đáp án: A
+
+Câu 10: Điểm khác biệt giữa SQL và MySQL gì?
+
+A. SQL là một ngôn ngữ truy vấn dữ liệu có cấu trúc còn MySQL là một hệ thống quản lý cơ sở dữ liệu.<br>
+B. Có thể sử dụng MySQL trong SQL.<br>
+C. Có thể sử dụng SQL trong MySQL.<br>
+D. Không có đáp án nào đúng.
+
+Đáp án: A,C
 
 
 
