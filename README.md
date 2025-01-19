@@ -2,6 +2,8 @@
 
 ## Bài 1: Tổng quan về cơ sở dữ liệu và ngôn ngữ truy vấn SQL
 
+Đây là bài học đầu tiên của môn học Các hệ cơ sở dữ liệu. Ở bài học này các bạn sẽ được làm quen với các khái niệm như cơ sở dữ liệu, hệ quản trị cơ sở dữ liệu và ngôn ngữ truy vấn dữ liệu.
+
 **Cơ sở dữ liệu (Database)** là một tập hợp dữ liệu hoặc thông tin có tổ chức để có dễ dàng truy cập, cập nhật hoặc thao tác. Ví dụ như chúng ta có các cơ sở dữ liệu trường học, ngân hàng,...
 
 **Hệ quản trị cơ sở dữ liệu (Database management system - DBMS)** như một phần mềm để giúp quản lý cơ sở dữ liệu. DBMS sẽ bao gồm các chức năng để xác định, thao tác cũng như truy xuất và quản lý dữ liệu. Ví dụ như: định dạng dữ liệu, tên của file, cấu trúc của bản record. DBMS cũng sẽ giúp xác định những quy tắc nhằm xác thực cũng như thao tác với những dữ liệu được lưu trữ trong DBMS.
@@ -30,33 +32,33 @@ Lab 1.1 Cài đặt MySQL Community
 
 Truy cập [Tại đây](https://dev.mysql.com/downloads/mysql/). Và tải xuống phiên bản Mysql Community.
 
-![Mysql_Community1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL1.png)
+![Mysql_Community1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL1.png)
 
 **Bước 2**: Mở file vừa tải về và thực hiện cài đặt
 
-![Mysql_Community2](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL2.png)
+![Mysql_Community2](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL2.png)
 
-![Mysql_Community3](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL3.png)
+![Mysql_Community3](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL3.png)
 
-![Mysql_Community4](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL4.png)
+![Mysql_Community4](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL4.png)
 
-![Mysql_Community5](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL5.png)
+![Mysql_Community5](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL5.png)
 
-![Mysql_Community6](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL6.png)
+![Mysql_Community6](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL6.png)
 
-![Mysql_Community7](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL7.png)
+![Mysql_Community7](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL7.png)
 
-![Mysql_Community8](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL8.png)
+![Mysql_Community8](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL8.png)
 
-![Mysql_Community9](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL9.png)
+![Mysql_Community9](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL9.png)
 
-![Mysql_Community10](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL10.png)
+![Mysql_Community10](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL10.png)
 
-![Mysql_Community11](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL11.png)
+![Mysql_Community11](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL11.png)
 
 **Bước 3**: Sau khi đã việc cài đã hoàn tất, mở Mysql Workbench
 
-![Mysql_Community12](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/InstallMySQL12.png)
+![Mysql_Community12](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/Install/InstallMySQL12.png)
 
 Quiz 1:
 
@@ -125,6 +127,34 @@ C. Có thể sử dụng SQL trong MySQL.<br>
 D. Không có đáp án nào đúng.
 
 Đáp án: A,C
+
+## Bài 2: Tạo một cơ sở dữ liệu và thao tác với bảng
+
+Trong bài học này các bạn sẽ được làm quen với ngôn ngữ định nghĩa dữ liệu (Data Definition Language - DDL). Đây là các lệnh để **định nghĩa cấu trúc** lưu trữ dữ liệu. Chúng ta sẽ sử dụng các câu lệnh này để thao tác trên Database (cơ sở dữ liệu), Table (bảng), các trường (cột). Một số lệnh thuộc nhóm DDL như CREATE, DROP, TRUNCATE, ALTER, ...
+
+### 1. Tạo và xóa cơ sở dữ liệu
+
+Để có thể lưu trữ dữ liệu trong MySQL, chúng ta phải thực hiện chỉ định một database trong trường hợp database đã tồn tại. Trong trường hợp chưa tồn tại, chúng ta phải thực hiện tạo một database mới bằng lệnh CREATE. Lưu ý là MySQL không phân biệt chữ hoa và chữ thường khi thực hiện câu lệnh, ví dụ lệnh CREATE sẽ tương đương Create. 
+
+> Syntax: Lệnh tạo một database: CREATE DATABASE ten_database;
+
+Lab 2.1 - Creating Database
+
+1.1 Yêu cầu:
+
+Chạy lần lượt và làm quen với câu truy vấn dưới đây:<br>
+**CREATE DATABASE donation; (tạo mới database tên là donation);**
+
+1.2 Hướng dẫn:
+
+Để chạy các lệnh trên các bạn thực hiện như sau:<br>
+Bước đầu khi mở MySQL Workbench lên sẽ là một giao diện trắng, bạn cần phải tạo file .sql để thực hiện viết câu lệnh.
+
+
+
+
+
+
 
 
 
