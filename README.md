@@ -150,10 +150,31 @@ Chạy lần lượt và làm quen với câu truy vấn dưới đây:<br>
 Để chạy các lệnh trên các bạn thực hiện như sau:<br>
 Bước đầu khi mở MySQL Workbench lên sẽ là một giao diện trắng, bạn cần phải tạo file .sql để thực hiện viết câu lệnh.
 
+![Database](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE.png)
 
+Lựa chọn vào icon sql đầu tiên ở góc trên bên tay trái để thực hiện tạo 1 file .sql mới trong mysql workbench
 
+![Database1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE1.png)
 
+![Database2](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE2.png)
 
+Thực hiện viết câu lệnh “**CREATE DATABASE donation;**” với mục đích là tạo cơ sở dữ liệu có tên là donation.
+
+![Database3](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE3.png)
+
+Để thực hiện câu lệnh, bạn hãy lựa chọn icon ‘sấm sét’ ở phía bên tay trái.
+
+![Database4](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE4.png)
+
+Ngay lập tức, thực hiện thành công việc khởi tạo database, sẽ được thông báo ở “Action Output”
+
+![Database5](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE5.png)
+
+Muốn hiển thị tên database “donation” trong MySQL, thì cần thực hiện chuột phải vào tab bên trái của MySQL. Lựa chọn “Refresh All” để load lại hệ quản trị cơ sở dữ liệu MySQL Workbench
+
+![Database6](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE6.png)
+
+![Database7](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE7.png)
 
 
 
