@@ -176,6 +176,105 @@ Muốn hiển thị tên database “donation” trong MySQL, thì cần thực 
 
 ![Database7](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateDatabase/CREATEDATABASE7.png)
 
+Nếu các bạn muốn xoá một database, các bạn có thể sử dụng lệnh **DROP**.
+
+>Syntax: Xoá một database: **DROP DATABASE ten_database;**
+
+Lab 2.2 Drop database
+
+Thực hiện lần lượt các câu truy vấn dưới đây trong giao diện MySQL Workbench:
+
+**DROP DATABASE data_name;** (Xoá một database hiện có)
+
+**CREATE DATABASE company;**<br>
+**USE company;**<br>
+**DROP DATABASE company;**
+
+### 2. Sử dụng cơ sở dữ liệu vào thao tác với bảng
+
+Để sử dụng một database đã tồn tại trong MySQL, các bạn phải chỉ định database đó cho MySQL bằng câu lệnh **USE**. 
+
+> Syntax: Lệnh chỉ định một database: USE ten_database;
+
+Sau khi đã chỉ định cơ sở dữ liệu, giờ các bạn có thể tạo bảng được trong MySQL.
+
+Lệnh tạo bảng: 
+
+```sql
+CREATE TABLE ten_bang(
+
+       ten_cot      kieu_du_lieu     cac_dieu_kien_khac,
+
+);
+```
+
+**ten_cot** : Đây là tên của cột mà các bạn muốn tạo
+**kieu_du_lieu** : Đây là kiểu dữ liệu của cột mà các bạn muốn tạo
+**cac_dieu_kien_khac** : Đây là một số điều kiện khác của cột như not null, primary key ...
+
+Ví dụ lệnh tạo bảng Persons:
+
+```sql
+CREATE TABLE Persons (
+
+    PersonID int,
+
+    LastName varchar(255),
+
+    FirstName varchar(255),
+
+    Address varchar(255),
+
+    City varchar(255)
+
+);
+```
+
+Để xoá hoàn toàn một bảng, các bạn có thể sử dụng lệnh **DROP**. 
+
+> Syntax: Cú pháp DROP: DROP TABLE ten_bang;
+
+**Có một số kiểu dữ liệu trong MySQL như sau:**
+
+- int: Kiểu số nguyên
+- float: Kiểu số thực
+- char: Kiểu chuỗi nhưng sẽ có độ dài cố định
+- varchar: Kiểu chuỗi nhưng sẽ có độ dài động
+- date: Đây là kiểu dữ liệu ngày tháng có dạng  YYYY-MM-DD
+- datetime: Đây là kiểu dữ liệu thời gian có dạng YYYY-MM-DD HH:MM:SS
+- timestamp: Đây là kiểu dữ liệu thời gian có dạng hiển thị HH:MM:SS. Sự khác biệt chính của DATETIME và TIMESTAMP là giá trị của TIMESTAMP được chuyển đổi từ múi giờ hiện tại sang UTC trong khi lưu trữ, và chuyển ngược trở lại từ UTC sang múi giờ hiện tại trong lúc lấy ra. Còn kiểu dữ liệu DATETIME thì không có gì thay đổi.
+
+Lab 2.3 Create Table – Drop Table
+
+Yêu cầu
+
+1. Yêu cầu 1: Tạo database tên cat_app.
+2. Yêu cầu 2: Trong database cat_app, tạo bảng pastries có hai trường (cột) như sau:
+
+- Trường name có kiểu dữ liệu VARCHAR(50)
+- Trường quantity có kiểu dữ liệu int
+
+3. Yêu cầu 3: Sau khi tạo xong bảng pastries, hãy hiển thị các bảng hiện có trong cơ sở dữ liệu cat_app ( thông qua giao diện )
+
+Ví dụ:
+
+![Create_Table](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateTable/CreateTable.png)
+
+4. Yêu cầu 4: Xoá table pastries
+5. Yêu cầu 5: Kiểm tra lại các table hiện có trong database cat_app.
+
+![Create_Table1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateTable/CreateTable1.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
