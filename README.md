@@ -265,12 +265,73 @@ Ví dụ:
 
 ![Create_Table1](https://github.com/Fakerrrrrrrrrrr/Database_system/blob/main/Images/CreateTable/CreateTable1.png)
 
+Quiz 2
 
+Câu 1: Trong hệ quản trị csdl MYSQL để có thể viết truy vấn trong một DBMS, chúng ta sẽ sử dụng công cụ gì?
 
+A. Database       B. DBMS       C. SQL       MySQL
 
+Đáp án: A
 
+Câu 2: Trong các đáp án dưới đây, đâu là cú pháp tạo một cơ sở dữ liệu trong MySQL?
 
+A. CREATE DATABASE ten_database;       B. CREATE ten_database;       C. DATABASE ten_database;       D. NEW DATABASE ten_database;
 
+Đáp án: A
+
+Câu 3: Trong các đáp án dưới đây, đâu là cú pháp tạo một bảng trong MySQL?
+
+A. CREATE DATABASE ten_database TABLE ten_bang;       B. DATABASE ten_database TABLE ten_bang(cac_cau_lenh_tao_cot);       C. CREATE ten_bang;       D. CREATE TABLE ten_bang(cac_cau_lenh_tao_cot);
+
+Đáp án: D
+
+Câu 4: Trong hệ quản trị csdl MYSQL để sử dụng một database đã tồn tại, chúng ta sẽ sử dụng câu lệnh nào dưới đây?
+
+A. USE ten_database;       B. USE DATABASE ten_database;       C. DATABASE ten_database;       D. ten_database;
+
+Đáp án: A
+
+Câu 5: Điều nào sau đây là đúng?
+
+A. Để có thể tạo bảng, trước hết chúng ta cần chỉ định cho DBMS biết chúng ta đang sử dụng DATABASE nào bằng cách sử dụng USE.<br>
+B. DBMS sẽ tự chỉ định DATABASE khi tạo bảng mà không cần can thiệp của người dùng.
+C. Có thể tạo một Table trống mà không cần tạo Columns.
+D. Không đáp án nào đúng.
+
+Đáp án: A
+
+Câu 6: Cú pháp để tạo một cột name có kiểu varchar(50) với điều kiện là NOT NULL trong một bảng là đáp án nào dưới đây?
+
+A. CREATE COLUMN name VARCHAR(50) NOT NULL       B. name VARCHAR(50)       C. name VARCHAR(50) NOT NULL       D. name NOT NULL VARCHAR(50)
+
+Đáp án C
+
+Câu 7: Lệnh DROP có tác dụng gì?
+
+A. Chỉ xoá dữ liệu của bảng, cấu trúc bảng sẽ không bị xoá.       B. Xoá một bản ghi cụ thể.       C. Xoá toàn bộ bảng, bao gồm cả cấu trúc bảng.       D. Xoá dữ liệu của bảng nhưng không xoá trong bộ nhớ.
+
+Đáp án: C
+
+Câu 8: Kiểu dữ liệu INT để lưu trữ dữ liệu kiểu gì?
+
+A. Kiểu số thực       B. Kiểu chuỗi       C. Kiểu ngày tháng       D. Kiểu số nguyên
+
+Đáp án: D
+
+Câu 9: Kiểu dữ liệu FLOAT để lưu trữ dữ liệu kiểu gì?
+
+A. Kiểu chuỗi       B. Kiểu số thực       C. Kiểu ngày tháng       D. Kiểu số nguyên
+
+Đáp án: B
+
+Câu 10: Điều nào sau đây là đúng khi nói về kiểu dữ liệu CHAR và VARCHAR?
+
+A. CHAR không bị giới hạn độ dài chuỗi, VARCHAR bị giới hạn độ dài chuỗi.<br>
+B. VARCHAR là một kiểu dữ liệu chuỗi động, sẽ cấp bộ nhớ bằng với kích thước chuỗi truyền vào nhưng không được vượt quá độ dài đã quy định. CHAR là kiểu dữ liệu chuỗi cố định, tức chương trình sẽ luôn cấp bộ nhớ bằng kích thước đã cài đặt trước.<br>
+C. CHAR và VARCHAR đều được sử dụng để lưu trữ dữ liệu chuỗi hay văn bản.<br>
+D. CHAR và VARCHAR được sử đụng để lưu trữ dữ liệu thời gian.
+
+Đáp án: B,C
 
 
 
