@@ -333,9 +333,51 @@ D. CHAR và VARCHAR được sử đụng để lưu trữ dữ liệu thời gi
 
 Đáp án: B,C
 
+## Bài 3: CRUD
 
+Trong bài học này các bạn sẽ được làm quen với ngôn ngữ thao tác dữ liệu (Data Manipulation Language - DML). Đây là các lệnh để thao tác với dữ liệu trên một bảng. Một số lệnh thuộc về nhóm DML như DELETE, INSERT, UPDATE, SELECT, ...
 
+### 1. Thêm dữ liệu vào bảng với lệnh INSERT
 
+Để lấy dữ liệu hay hiển thị dữ liệu từ một bảng, các bạn sẽ sử dụng lệnh SELECT.
+
+Cú pháp lệnh SELECT:  **SELECT** ten_cot_1, ten_cot_2, ... ten_cot_n FROM ten_bang;<br>
+Nếu muốn lấy tất cả các cột, các bạn sẽ sử dụng *: **SELECT * FROM** ten_bang;
+
+Để thêm hay chèn dữ liệu vào một bảng, các bạn sẽ sử dụng lệnh INSERT.
+
+Cú pháp lệnh INSERT: **INSERT INTO** ten_bang VALUES(gia_tri_cot_1, gia_tri_cot_2, ...,gia_tri_cot_n);
+
+Ví dụ: INSERT INTO cats(name,age)<br>
+       VALUES ("Jetson",7);
+
+Lab 3.1 INSERT
+
+Yêu cầu<br>
+Từ database cat_app hãy thực hiện các yêu cầu dưới đây:
+
+1. Yêu cầu 1: Tạo bảng people với các trường như sau
+- first_name: Giới hạn 20 ký tự
+- last_name: Giới hạn 20 ký tự
+- age: Kiểu dữ liệu số nguyên
+
+2. Yêu cầu 2: Thực hiện INSERT dữ liệu vào bảng people<br>
+Cú pháp INSERT:<br>
+INSERT INTO table_name(field1, field2 …)  VALUES (values1, values 2…);<br>
+Dữ liệu INSERT  lần lượt theo các cột first_name, last_name, age như sau:<br>
+('Tina', 'Belcher', 13)<br>
+('Bob', 'Belcher', 42)<br>
+('Linda', 'Belcher', 45)<br>
+('Phillip', 'Frond', 38)<br>
+('Calvin', 'Fischoeder', 70)<br>
+
+3. Yêu cầu 3: Thực hiện truy vấn tất cả dữ liệu trong bảng people<br>
+Cú pháp truy vấn:<br>
+SELECT * FROM people;<br>
+Kết quả:<br>
+
+4. Yêu cầu 4: Thực hiện xóa bảng people<br>
+5. Yêu cầu 5: Kiểm tra bảng people chắc chắn đã được xoá bằng câu lệnh “show tables;“<br>
 
 
 
