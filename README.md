@@ -424,7 +424,7 @@ CREATE TABLE unique_cats (
 
 **Lab 3.2 PRIMARY KEY - NULL – NOT NULL - DEFAULT**
 
-**Yêu cầu**
+**Yêu cầu**<br>
 Sử dụng database cat_app hãy thực hiện các yêu cầu sau:<br>
 1. **Yêu cầu 1**: Tạo  bảng unique_cats có các trường như sau:<br>
 - cat_id: Có kiểu int và NOT NULL, cat_id là một primary_key<br>
