@@ -422,6 +422,39 @@ CREATE TABLE unique_cats (
 );
 ```
 
+**Lab 3.2 PRIMARY KEY - NULL – NOT NULL - DEFAULT**
+
+**Yêu cầu**
+Sử dụng database cat_app hãy thực hiện các yêu cầu sau:<br>
+1. **Yêu cầu 1**: Tạo  bảng unique_cats có các trường như sau:<br>
+- cat_id: Có kiểu int và NOT NULL, cat_id là một primary_key<br>
+- name: Có kiểu varchar(100)<br>
+- age: Có kiểu int<br>
+2. **Yêu cầu 2**: insert các dữ liệu sau lần lượt theo các cột cat_id, name, age cho bảng **unique_cats** và đưa ra nhận xét:<br>
+(1, 'Fred', 23)<br>
+(2, 'Louise', 3)<br>
+(3, 'James', 3)<br>
+3. **Yêu cầu 3**: Tạo bảng unique_cats2 có các trường như sau:<br>
+- cat_id: Có kiểu int và NOT NULL, là một primary_key và có thể tự động tăng (auto_increment)<br>
+- name: Có kiểu varchar(100)<br>
+- age: Có kiểu int<br>
+4. **Yêu cầu 4**:  insert các dữ liệu sau lần lượt theo các cột name, age cho bảng unique_cats2:<br>
+('Skippy', 4)<br>
+('Jiff', 3)<br>
+('Jiff', 3)<br>
+('Jiff', 3)<br>
+('Skippy', 4)<br>
+5. **Yêu cầu 5**: Hiển thị tất cả dữ liệu của bảng unique_cats2 và đưa ra nhận xét về trường cat_id<br>
+6. **Yêu cầu 6**: Tạo bảng employees với các trường như sau:<br>
+- id: Là một primary key, có kiểu int, tự động tăng và not null<br>
+- first_name: Có kiểu varchar(255) và not null<br>
+- last_name: Có kiểu varchar(255) và not null<br>
+- middle_name: Có kiểu varchar(255)<br>
+- age: Có kiểu int và not null<br>
+- current_status: Có kiểu varchar(255) và not null, giá trị mặc định sẽ là “employed”<br>
+7. **Yêu cầu 7**: Insert dữ liệu lần lượt theo các cột first_name, last_name, age cho bảng employees như sau:<br>
+('Dora', 'Smith', 58);<br>
+8. **Yêu cầu 8**: Hiển thị tất cả dữ liệu trong bảng employees và đưa ra nhận xét về các cột id, middle_name, current_status.<br>
 
 
 
