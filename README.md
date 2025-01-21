@@ -379,10 +379,48 @@ Kết quả:<br>
 4. Yêu cầu 4: Thực hiện xóa bảng people<br>
 5. Yêu cầu 5: Kiểm tra bảng people chắc chắn đã được xoá bằng câu lệnh “show tables;“<br>
 
+### 2. Tạo ràng buộc cơ bản của bảng
 
+Ở bài này, các bạn sẽ được giới thiệu một số ràng buộc cơ bản khi tạo bảng như NULL, NOT NULL, cài đặt các giá trị mặc định cho cột. Ngoài ra các bạn cũng sẽ được làm quen về cột khoá chính (primary key) khi tạo bảng. Một cột có thể được gọi là primary key của bảng nếu nó xác định duy nhất từng bộ (hàng) trong bảng đó. Nó thực thi các ràng buộc toàn vẹn đối với bảng. Chỉ có một primary key trong một bảng. Primary key không chấp nhận các giá trị trùng lặp và NULL.
 
+Nếu các bạn muốn giữ nguyên dấu ngoặc kép khi truy vấn thì thay vì chỉ sử dụng " các bạn hãy sử dụng \".
 
+Để hiểu rõ hơn về một số ràng buộc cơ bản khi tạo cột, mời các bạn theo dõi các bài học bên dưới:
 
+**Lưu ý về việc sử dụng dấu ngoặc kép bên trong các giá trị được chèn**
+
+Nếu bạn đang băn khoăn về cách chèn một giá trị xâu ký tự (VARCHAR) chứa dấu ngoặc kép thì hãy xem ở đây nè.
+
+Bạn có thể làm theo các cách sau:<br>
+- Thoát dấu nháy với dấu gạch chéo ngược: "This text has \"quotes\" in it" or 'This text has \'quotes\' in it'
+- Thay dấu nháy đơn bằng dấu nháy kép và ngược lại, thay dấu nháy kép bằng dấu nháy đơn: "This text has 'quotes' in it" or 'This text has "quotes" in it'
+
+Từ khóa NULL và NOT NULL được đặt phía sau kiểu dữ liệu của mỗi column được khai báo với mỗi lần tạo bảng
+```sql
+CREATE TABLE cats (
+       name VARCHAR(100) NOT NULL,
+       age INT NOT NULL
+);
+```
+Từ khóa DEFAULT (Adding DEFAULT Values) là giá trị mặc định nếu không gán giá trị chèn hàng ở cột không dùng tới
+```sql
+CREATE TABLE cats3 (
+       name VARCHAR(100) DEFAULT 'unnamed',
+       age INT DEFAULT 99
+);
+CREATE TABLE cats4 (
+       name VARCHAR(100) NOT NULL DEFAULT 'unnamed',
+       age INT NOT NULL DEFAULT 99
+);
+```
+Từ khóa Primary Key là một cột nào đó được sử dụng làm mã định danh duy nhất cho mỗi hàng riêng lẻ (A Unique Identifier)
+```sql
+CREATE TABLE unique_cats (
+       cat_id INT NOT NULL PRIMARY KEY,
+       name VARCHAR(100),
+       age INT
+);
+```
 
 
 
